@@ -1,0 +1,46 @@
+.gameCardContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 5px;
+    background: #E0E0E0 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto;
+    color: #333F48;
+}
+
+.gameDate{
+    display:flex;
+    justify-content: flex-end;
+}
+.matchRivals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin:0 auto
+}
+
+.gameOdds{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+.gameOddCard{
+    cursor: pointer;
+    width: 80px;
+    height: 70px;
+    background: #FFFFFF 0% 0% no-repeat ;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: #79C000;
+}

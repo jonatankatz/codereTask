@@ -1,0 +1,8 @@
+{
+  "links": [
+    { "title": "Deportes", "path": "./" },
+    { "title": "En vivo", "path": "./" },
+    { "title": "Slots", "path": "./" },
+    { "title": "Casino", "path": "./" }
+  ]
+}
