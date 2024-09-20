@@ -34,80 +34,94 @@ const AddMatchModal = ({ isOpen, onClose, onSubmit }) => {
           <div>
             <span className={styles.formTitle}>Home</span>
             <div className={styles.inputsContainer}>
-              <input
-                step={0.01}
-                type="text"
-                placeholder="Team Name"
-                {...register("homeTeamName", {
-                  required: "Home team name is required",
-                })}
-              />
-              {errors.homeTeamName && <p>{errors.homeTeamName.message}</p>}
-
-              <input
-                step={0.01}
-                type="number"
-                placeholder="Odd"
-                {...register("homeTeamOdd", {
-                  required: "Home team odd is required",
-                })}
-              />
-              {errors.homeTeamOdd && <p>{errors.homeTeamOdd.message}</p>}
+              <div>
+                {" "}
+                <input
+                  step={0.01}
+                  type="text"
+                  placeholder="Team Name"
+                  {...register("homeTeamName", {
+                    required: "Home team name is required",
+                  })}
+                />
+                {errors.homeTeamName && <p>{errors.homeTeamName.message}</p>}
+              </div>
+              <div>
+                <input
+                  step={0.01}
+                  type="number"
+                  placeholder="Odd"
+                  {...register("homeTeamOdd", {
+                    required: "Home team odd is required",
+                  })}
+                />
+                {errors.homeTeamOdd && <p>{errors.homeTeamOdd.message}</p>}
+              </div>
             </div>
           </div>
           <div>
             <span className={styles.formTitle}>Draw</span>
             <div className={styles.inputsContainer}>
-              <input
-                step={0.01}
-                type="number"
-                placeholder="Odd"
-                {...register("drawOdd", { required: "Draw odd is required" })}
-              />
-              {errors.drawOdd && <p>{errors.drawOdd.message}</p>}
+              <div>
+                <input
+                  step={0.01}
+                  type="number"
+                  placeholder="Odd"
+                  {...register("drawOdd", { required: "Draw odd is required" })}
+                />
+                {errors.drawOdd && <p>{errors.drawOdd.message}</p>}
+              </div>
             </div>
           </div>
           <div>
             <span className={styles.formTitle}>Away</span>
             <div className={styles.inputsContainer}>
-              <input
-                type="text"
-                placeholder="Team Name"
-                {...register("awayTeamName", {
-                  required: "Away team name is required",
-                })}
-              />
-              {errors.awayTeamName && <p>{errors.awayTeamName.message}</p>}
+              <div>
+                <input
+                  type="text"
+                  placeholder="Team Name"
+                  {...register("awayTeamName", {
+                    required: "Away team name is required",
+                  })}
+                />
+                {errors.awayTeamName && <p>{errors.awayTeamName.message}</p>}
+              </div>
 
-              <input
-                step={0.01}
-                type="number"
-                placeholder="Odd"
-                {...register("awayTeamOdd", {
-                  required: "Away team odd is required",
-                })}
-              />
-              {errors.awayTeamOdd && <p>{errors.awayTeamOdd.message}</p>}
+              <div>
+                <input
+                  step={0.01}
+                  type="number"
+                  placeholder="Odd"
+                  {...register("awayTeamOdd", {
+                    required: "Away team odd is required",
+                  })}
+                />
+                {errors.awayTeamOdd && <p>{errors.awayTeamOdd.message}</p>}
+              </div>
             </div>
           </div>
 
           <div>
             <span>Date</span>
             <div className={styles.inputsContainer}>
-              <input
-                type="date"
-                {...register("matchDate", {
-                  required: "Match date is required",
-                })}
-              />
-              {errors.matchDate && <p>{errors.matchDate.message}</p>}
-              <input
-                type="time"
-                {...register("matchTime", {
-                  required: "Match time is required",
-                })}
-              />
-              {errors.matchTime && <p>{errors.matchTime.message}</p>}
+              <div>
+                <input
+                  type="date"
+                  {...register("matchDate", {
+                    required: "Match date is required",
+                  })}
+                />
+                {errors.matchDate && <p>{errors.matchDate.message}</p>}
+              </div>
+              <div>
+                <input
+                  type="time"
+                  {...register("matchTime", {
+                    required: "Match time is required",
+                  })}
+                />
+                {errors.matchTime && <p>{errors.matchTime.message}</p>}
+              </div>
             </div>
           </div>
           <button type="submit">Submit</button>
