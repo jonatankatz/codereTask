@@ -1,6 +1,13 @@
-.dropdown{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 10px 0;
+.oddsFormsAndDropdown {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px 0;
 }

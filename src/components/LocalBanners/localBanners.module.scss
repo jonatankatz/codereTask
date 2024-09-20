@@ -1,76 +1,102 @@
 .localBannersContainer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    .localBannerCard:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .localBannerCard {
-    background-color: #000000;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 5px;
-    @media only screen and (max-width: 768px) {
-            flex-direction: column;
-            justify-content: space-around;
-        }
+  background-color: #000000;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
-.bannerTitle{
-    text-align: left;
-    border-left: solid 4px #79C000 ;
-    padding-left: 15px;
-    @media only screen and (max-width: 768px) {
-                text-align: center;
-                border-left: none
-
-        }
+.bannerTitle {
+  text-align: left;
+  border-left: solid 4px #79c000;
+  padding-left: 15px;
+  margin-bottom: 0px;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    border-left: none;
+  }
 }
 
+.mobileDots {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #79c000;
+  margin: 0 5px;
+}
 
 .localBannerText {
-    width: 49%;
-    margin-left:1% ;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-around;
-    @media only screen and (max-width: 768px) {
-                width: 99%;
-                align-items: center;
-                margin-bottom: 10px;
-        }
+  width: 49%;
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  column-gap: 20px;
+  @media only screen and (max-width: 768px) {
+    width: 99%;
+    align-items: center;
+    margin-bottom: 10px;
+    row-gap: 30px;
+  }
 }
 
-.bannerParagraph{
-    color:white;
-    font-size: 14px;
-    text-align: left;
+.bannerParagraph {
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .localBannerImage {
-    
-    width: 50%;
-    border-radius: 25px;
-    @media only screen and (max-width: 768px) {
-            width: 100%;
-        }
+  width: 50%;
+  border-radius: 25px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .btn {
-
-    border: 2px solid #79C000;
-    border-radius: 25px;
-    opacity: 1;
-    padding: 5px 15px;
-    cursor: pointer;
-    color: white;
-    width: 297px;
-    &:hover {
-        color: #79C000;
-        border-color: white
-    }
-
+  border: 2px solid #79c000;
+  border-radius: 25px;
+  opacity: 1;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  width: 297px;
+  &:hover {
+    color: #79c000;
+    border-color: white;
+  }
 }

@@ -1,15 +1,13 @@
-.gamesSectionContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    max-width:100%;
-    flex-wrap: wrap 
+.gamesSectionContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .gameCard {
-    
-    border-radius: 10px;
+  border-radius: 10px;
 }
-
