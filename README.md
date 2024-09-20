@@ -57,4 +57,8 @@
 - [Swiper.js](https://swiperjs.com/react)
 - [MobX](https://mobx.js.org/README.html)
 - [Axios](https://axios-http.com/)
+- [React-Modal](https://github.com/reactjs/react-modal/)
+- [React-hook-form](https://https://react-hook-form.com/)
+
+
 
